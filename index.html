@@ -111,38 +111,47 @@
     </section>
 
     <!--  Nossos produtos -->
-    <section>
-      <div class="servicos">
-        <h2>Nossos Produtos</h2>
-        <div class="servicos-container1">
-          <div>
-            <img src="assets/imgs/produtos-cafe-tradicional.png" alt="Cafe tradicional">
-            <h3>Cafés Tradicional</h3>
-          </div>
-          <div>
-            <img src="assets/imgs/produtos-cafe-especial.png" alt="Cafe com leite">
-            <h3>Cafés Especiais</h3>
-          </div>
-          <div>
-            <img src="assets/imgs/produtos-vitaminas.png" alt="Vitaminas">
-            <h3>Smoothies e Vitaminas</h3>
+    <section class="py-5" >
+      <div class=”row”>
+        <h2 class="fw-bold pb-1 text-center">Nossos Produtos</h2>
+        <div class="card border-0 btn" style="width: 18rem;">
+        <img src="assets/imgs/produtos-cafe-tradicional.png" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-text">Café Tradicionais</h5>
+        </div>
+        </div>
+        <div class="card border-0 btn" style="width: 18rem;">
+          <img src="assets/imgs/produtos-cafe-especial.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-text text-center">Café Especial</h5>
           </div>
         </div>
-        <div class="servicos-container2">
-          <div>
-            <img src="assets/imgs/produtos-paes.png" alt="Pães">
-            <h3>Pães e Focaccias</h3>
+        <div class="card border-0 btn" style="width: 18rem;">
+          <img src="assets/imgs/produtos-vitaminas.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text text-center">Smoothies e Vitaminas</h5>
           </div>
-          <div>
-            <img src="assets/imgs/produtos-doces.png" alt="Doces">
-            <h3>Doces</h3>
+        </div>
+        <div class="card border-0 btn" style="width: 18rem;">
+          <img src="assets/imgs/produtos-paes.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text text-center">Pães e Facaccias</h5>
           </div>
-          <div>
-            <img src="assets/imgs/produtos-salgados.png" alt="Salgados">
-            <h3>Salgados</h3>
+        </div>
+        <div class="card border-0 btn" style="width: 18rem;">
+          <img src="assets/imgs/produtos-doces.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text text-center">Doces</h5>
+          </div>
+        </div>
+        <div class="card border-0 btn" style="width: 18rem;">
+          <img src="assets/imgs/produtos-salgados.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text text-center">Salgados</h5>
           </div>
         </div>
       </div>
+     
     </section>
 
     <section class="banners banner-3 d-flex flex-column justify-content-center">
@@ -159,7 +168,47 @@
       <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-  <div class="offcanvas-body">
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Café
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Temos um excelente espaço para alimentação e descanso, com a vitrine recheada de doces, salgados, cafés tradicionais e especiais para desfrutar seus melhores momentos.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Bistrô
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Além de cafés o dia todo, oferecemos refeições em horário de almoço (11 às 15h) com pratos deliciosos de bistrô!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Coworking
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Temos espaço adequado para trabalho, com conexão de internet de alta velocidade e instalações confortáveis para reuniões.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

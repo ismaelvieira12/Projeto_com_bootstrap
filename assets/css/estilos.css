@@ -2,7 +2,7 @@ body {
   --bege: #E6E0D6;
   --marrom-escuro: #816D4F;
   --marrom-claro: #B29463;
-  --marrom-maisClaro: #ecdec54e;
+  --marrom-maisClaro: #d0a863;
   font-family: 'Barlow', sans-serif;
   height: 4000px;
 }
@@ -99,7 +99,7 @@ section .title{
 }
 
 /* Produtos */
-.servicos{
+/* .servicos{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,4 +127,52 @@ section .title{
 .servicos-container2 h3{
   font-size: 30px;
   font-weight: bold;
+} */
+
+/* Canvas-1 */
+.accordion-button{
+  background-color: var(--marrom-claro);
 }
+.accordion-button:hover{
+  background-color: var(--marrom-maisClaro);
+}
+
+/* PARA celulares 360px */
+/* @media(width <= 360px){
+  .banners .banner-titulo h2{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .banners .banner-titulo p{
+    font-size: 15px;
+  }
+
+  .py-5 .title{
+    font-size: 30px;
+  }
+
+  .banners .banner-titulo-2 h2{
+    font-size: 20px;
+  }
+  .banners .banner-titulo-2 p{
+    font-size: 15px;
+  }
+
+  .servicos h2{
+    font-size: 30px;
+  }
+  .servicos-container1{
+    flex-direction: column;
+  }
+  .servicos-container1 div >h3{
+    font-size: 20px; 
+    font-weight: bold;
+  }
+  .servicos-container2{
+    flex-direction: column;
+  }
+  .servicos-container2 div >h3{
+    font-size: 20px; 
+    font-weight: bold;
+  } */
+ 
