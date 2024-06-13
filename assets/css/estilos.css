@@ -112,6 +112,13 @@ section .title{
 }
 .modal-footer .btn-secondary{
   background-color: var(--marrom-escuro);
+  color: #000;
+}
+
+/* Input range */
+#nivel-satisfacao::-webkit-slider-thumb{
+  appearance: none;
+  background-color: var(--marrom-claro);
 }
 
 /* Para notebooks com 1280px */
