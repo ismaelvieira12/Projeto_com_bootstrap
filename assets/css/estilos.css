@@ -98,38 +98,6 @@ section .title{
   background-color: var(--marrom-claro);
 }
 
-/* Produtos */
-/* .servicos{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.servicos h2{
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 6rem;
-}
-.servicos-container1{
-  display: flex;
-  text-align: center;
-  margin: 50px;
-}
-.servicos-container1 h3{
-  font-size: 30px;
-  font-weight: bold;
-}
-.servicos-container2{
-  display: flex;
-  text-align: center;
-  margin: 50px;
-}
-.servicos-container2 h3{
-  font-size: 30px;
-  font-weight: bold;
-} */
-
-/* Canvas-1 */
 .accordion-button{
   background-color: var(--marrom-claro);
 }
@@ -137,14 +105,38 @@ section .title{
   background-color: var(--marrom-maisClaro);
 }
 
-/* PARA celulares 360px */
-/* @media(width <= 360px){
-  .banners .banner-titulo h2{
-    font-size: 22px;
-    font-weight: bold;
+/* Modal btn */
+#exampleModalLabel{
+  color: var(--marrom-escuro);
+  font-weight: bold;
+}
+.modal-footer .btn-secondary{
+  background-color: var(--marrom-escuro);
+}
+
+/* Para notebooks com 1280px */
+@media(width = 1280px){
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  section .row{
+    width: 900px;
+  }
+}
+
+/* PARA celulares 360px */
+@media(width <= 428px){
+  .navbar-brand > img{
+    width: 150px;
+  }
+  .banner-titulo h2 {
+    font-size: 27px;
+    font-weight: bold;
+  } 
   .banners .banner-titulo p{
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .py-5 .title{
@@ -161,18 +153,17 @@ section .title{
   .servicos h2{
     font-size: 30px;
   }
-  .servicos-container1{
-    flex-direction: column;
-  }
   .servicos-container1 div >h3{
     font-size: 20px; 
     font-weight: bold;
   }
-  .servicos-container2{
-    flex-direction: column;
-  }
   .servicos-container2 div >h3{
     font-size: 20px; 
     font-weight: bold;
-  } */
- 
+  }
+
+  .card-text:last-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
