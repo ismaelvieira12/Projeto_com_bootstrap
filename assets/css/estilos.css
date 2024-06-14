@@ -120,7 +120,18 @@ section .title{
   appearance: none;
   background-color: var(--marrom-claro);
 }
-
+/* RODAPE */
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--marrom-claro);
+  height: 100px;
+}
+footer .rodape-icons a{
+  text-decoration: none;
+  color: #000;
+}
 /* Para notebooks com 1280px */
 @media(width = 1280px){
   section{
