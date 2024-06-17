@@ -132,6 +132,18 @@ footer .rodape-icons a{
   text-decoration: none;
   color: #000;
 }
+
+
+/* Modo DARK */
+[data-bs-theme='dark']{
+  color: #fff;
+  .nav-link, .card-body, .offcanvas, .accordion{
+    --bs-nav-link-color: #fff;
+    --bs-card-color: #fff;
+    --bs-offcanvas-color: #fff;
+    --bs-body-color:#fff;
+  }
+}
 /* Para notebooks com 1280px */
 @media(width = 1280px){
   section{
