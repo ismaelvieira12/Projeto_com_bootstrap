@@ -42,9 +42,13 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
-                    <label class="form-check-label" for="modo-noturno">Modo noturno</label>
+                  <div class="form-check form-switch chk" style="padding-left: 0;">
+                    <input type="checkbox" name="checkbox" id="modo-noturno">
+                    <label for="modo-noturno">
+                      <i class="bi sun" id="icons"></i>
+                      <i class="bi bi-moon-stars-fill" id="icons"></i>
+                      <div class="ball"></div>
+                    </label>
                   </div>
                 </a>
               </li>
@@ -57,14 +61,14 @@
   <main>
     <!-- Primeira section com a primeira imagem -->
     <section class="banners banner-1 d-flex flex-column justify-content-center">
-      <div class="banner-titulo">
+      <div class="banner-titulo w-100">
         <h2>Sua pausa para desfrutar a vida.</h2>
         <p>Boas-vindas ao Bistrô Serenatto! Um ambiente aconchegante e acolhedor para apreciar um bom café.</p>
       </div>
     </section>
 
     <!-- Parte de serviços -->
-    <section  class="py-5">
+    <section  class="py-5  d-flex flex-column">
       <h2 class=" title text-center fw-bold pb-1">Nossos serviços</h2>
       <div class="container">
         <div class="card m-4" style="width: 20rem;">
@@ -112,8 +116,8 @@
     </section>
 
     <!--  Nossos produtos -->
-    <section class="py-5" >
-      <div class="row justify-content-center">
+    <section class="py-5">
+      <div class="row justify-content-center mx-0">
         <h2 class="fw-bold pb-1 text-center">Nossos Produtos</h2>
 
         <div class="col-12 col-md-6 col-xl-3 card border-0 btn" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#modal-1">
