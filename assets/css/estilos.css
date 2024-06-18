@@ -5,21 +5,45 @@ body {
   --marrom-maisClaro: #d0a863;
   font-family: 'Barlow', sans-serif;
   height: 4000px;
+  transition: transform 0.2s linear;
 }
 
-input[type=checkbox]{
-  border: 2px solid var(--marrom-claro);
-  box-shadow: none;
+/* Estilizando o modo noturno */
+.chk #modo-noturno{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: absolute;
+  opacity: 0;
+}
+.chk label{
+  background-color: #E6E0D6;
+  padding: 5px;
+  width: 60px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.chk label .ball{
+  background-color: var(--marrom-escuro);
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  padding: 5px;
+  height: 28px;
+  width: 28px;
+
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
 }
 
-input[type=checkbox]:checked,
-input[type="checkbox"]:focus {
-  background-color: var(--marrom-claro);
-  border-color: var(--marrom-claro);
-  box-shadow: none;
-  outline: none;
+#modo-noturno:checked + label .ball{
+  transform: translateX(25px);
 }
-
 /* incerindo o banner da primeira section*/
 .banner-1{
   background-image:url(../imgs/banner-1.png);
