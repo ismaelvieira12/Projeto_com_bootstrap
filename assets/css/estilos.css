@@ -12,19 +12,22 @@ body {
 .chk #modo-noturno{
   padding: 0;
   margin: 0;
+  width: 40px;
+  height: 30px;
   box-sizing: border-box;
   position: absolute;
+  cursor: pointer;
   opacity: 0;
 }
 .chk label{
   background-color: #E6E0D6;
   padding: 5px;
-  width: 60px;
-  border-radius: 50px;
-  cursor: pointer;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  border-radius: 50px;
+  width: 60px;
+  cursor: pointer;
+  display: none;
   position: relative;
 }
 .chk label .ball{
@@ -180,8 +183,24 @@ footer .rodape-icons a{
   }
 }
 
+/* Para Tablets */
+@media (width <= 884px){
+  .chk .smol{
+    display: none;
+  }
+  .chk label{
+    display: block;
+  }
+}
+
 /* PARA celulares 360px */
 @media(width <= 428px){
+  .chk .smol{
+    display: none;
+  }
+  .chk label{
+    display: block;
+  }
   .navbar-brand > img{
     width: 150px;
   }
