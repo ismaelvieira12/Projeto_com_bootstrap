@@ -12,36 +12,22 @@ body {
 .chk #modo-noturno{
   padding: 0;
   margin: 0;
-<<<<<<< HEAD
   width: 40px;
   height: 30px;
   box-sizing: border-box;
   position: absolute;
   cursor: pointer;
-=======
-  box-sizing: border-box;
-  position: absolute;
->>>>>>> 938321106d2173fe1470c5c8dc746366d8c01a37
   opacity: 0;
 }
 .chk label{
   background-color: #E6E0D6;
   padding: 5px;
-<<<<<<< HEAD
   display: flex;
   justify-content: space-around;
   border-radius: 50px;
   width: 60px;
   cursor: pointer;
   display: none;
-=======
-  width: 60px;
-  border-radius: 50px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
->>>>>>> 938321106d2173fe1470c5c8dc746366d8c01a37
   position: relative;
 }
 .chk label .ball{
@@ -197,7 +183,6 @@ footer .rodape-icons a{
   }
 }
 
-<<<<<<< HEAD
 /* Para Tablets */
 @media (width <= 884px){
   .chk .smol{
@@ -216,10 +201,6 @@ footer .rodape-icons a{
   .chk label{
     display: block;
   }
-=======
-/* PARA celulares 360px */
-@media(width <= 428px){
->>>>>>> 938321106d2173fe1470c5c8dc746366d8c01a37
   .navbar-brand > img{
     width: 150px;
   }
