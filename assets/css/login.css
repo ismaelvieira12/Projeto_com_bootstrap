@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bege: #f9f3e9;
+    --marrom-escuro: #816D4F;
+    --marrom-claro: #B29463;
+    --marrom-maisClaro: #d0a863;
+
+    --corWhite: #fff;
+    --corBlack: #000;
+}
+
+body{
+    background-color: var(--bege);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: none;
+}
+/* Primeira parte do projeto */
+.content.first-content1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    width: 900px;
+    
+}
+
+.content.first-content1 .first-title{
+    font-family: "Playwrite PL", cursive;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 0 0 5px 0;
+    color: var(--bege);
+}
+
+.content.first-content1 .descrition{
+    font-size: 20px;
+    color: var(--bege);
+}
+.content.first-content1 .btn{
+    width: 150px;
+    margin:  40px 0;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--corWhite);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    font-size: 15px;
+    background-color: var(--marrom-escuro);
+    color: var(--corWhite);
+
+    &:hover{
+        color: var(--corBlack);
+        background-color: var(--corWhite);
+        transition: 0.7s;
+    }
+}
+
+.first-colmn1{
+    background-color: var(--marrom-escuro);
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.second-column1{
+    background-color: var(--corWhite);
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.second-column1 .title{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+.second-column1 .descition{
+    font-size: 15px;
+    padding: 10px;
+}
+.second-column1 .social-midia ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    gap: 10px;
+}
+.second-column1 .social-midia ul li{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 50%;
+    background-color: var(--bege);
+    width: 40px;
+    height: 40px;
+}
+.second-column1 .social-midia ul li a{
+    color: var(--corBlack);
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.second-column1 .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario label {
+    border: 1px solid #00000049;
+    width: 100%;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: #f3f1f1;
+}
+
+.formulario label i{
+    margin-left: 5px;
+}
+.formulario label > input{
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f3f1f1;
+    outline: none;
+}
+.second-btn{
+    width: 150px;
+    margin:  10px 0;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--corWhite);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    font-size: 15px;
+    background-color: var(--marrom-escuro);
+    color: var(--corWhite);
+
+    &:hover{
+        color: var(--corBlack);
+        background-color: var(--corWhite);
+        transition: 0.7s;
+    }
+}
+
+/* Segunda parte do projeto */
+.content.second-content2{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    width: 900px;
+}
+.second-column2{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.first-colmn2 .title{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: "Playwrite PL", cursive;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 0 0 5px 0;
+    color: var(--bege);
+}
