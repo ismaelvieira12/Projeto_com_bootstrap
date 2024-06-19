@@ -1,11 +1,15 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+=======
+>>>>>>> 938321106d2173fe1470c5c8dc746366d8c01a37
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 :root{
     --bege: #f9f3e9;
     --marrom-escuro: #816D4F;
@@ -314,4 +318,10 @@ body{
         background-color: var(--corWhite);
         transition: 0.7s;
     }
+=======
+main{
+    background-image: url('../imgs/background.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+>>>>>>> 938321106d2173fe1470c5c8dc746366d8c01a37
 }
