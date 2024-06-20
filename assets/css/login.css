@@ -39,43 +39,30 @@
     height: 100%;
     position: absolute;
 }
-.first-column1{
-    display: flex;
-    flex: 1 0 auto;
-}
-.second-column1{
-    flex: 2 0 auto;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-}
-
-.second-content2{
-    display: none;
-}
 /* Primeira parte do projeto */
-/* .content.first-content1{
+.first-content1{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 600px;
-    width: 900px;
+}
+.first-colmn1{
+    text-align: center;
+    flex: 1 0 auto;
+    /* Para sobrepor o content a cima do :before temos que usar a propriédade z-index maior que a dele */
+    z-index: 10;
 }
 
-.content.first-content1 .first-title{
+/* Estilizando o title do primeiro content */
+.first-content1 .first-title{
     font-family: "Playwrite PL", cursive;
     font-weight: 100;
     font-size: 40px;
     margin: 0 0 5px 0;
     color: var(--bege);
 }
-
-.content.first-content1 .descrition{
+.first-content1 .descrition{
     font-size: 20px;
     color: var(--bege);
 }
+
 .content.first-content1 .btn{
     width: 150px;
     margin:  40px 0;
@@ -94,89 +81,85 @@ form{
         transition: 0.7s;
     }
 }
-
-.first-colmn1{
-    background-color: var(--marrom-escuro);
-    height: 100%;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
 .second-column1{
-    background-color: var(--corWhite);
-    height: 100%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    flex: 2 0 auto;
+    z-index: 10;
+    text-align: center;
 }
 .second-column1 .title{
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 40px;
+    color: var(--marrom-escuro);
 }
+
 .second-column1 .descition{
     font-size: 15px;
     padding: 10px;
+    font-family: "Work Sans", sans-serif;
+    color: #9a9595;
 }
-.second-column1 .social-midia ul{
+.social-midia{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+}
+.social-midia{
     margin: 20px 0;
     gap: 10px;
 }
-.second-column1 .social-midia ul li{
+.social-midia li{
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
     list-style: none;
     border-radius: 50%;
     background-color: var(--bege);
     width: 40px;
     height: 40px;
+    &:hover{
+        background-color: var(--marrom-escuro);
+        transition: 0.2s;
+    }
 }
-.second-column1 .social-midia ul li a{
+.social-midia li a{
     color: var(--corBlack);
     font-size: 20px;
-    margin: 0 10px;
-    padding: 10px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    &:hover{
+        color: var(--corWhite);
+    }  
 }
-.second-column1 .formulario{
+form{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.formulario label {
-    border: 1px solid #00000049;
-    width: 100%;
+form label {
+    border: none;
+    /* border: 1px solid #00000049; */
     margin: 5px;
+    width: 55%;
     border-radius: 4px;
     background-color: #f3f1f1;
 }
-
-.formulario label i{
-    margin-left: 5px;
+form label i{
+    opacity: 0.5;
+    margin-left: -0;
 }
-.formulario label > input{
+form label input{
     border: none;
     margin: 5px;
     padding: 10px;
+    height: 45px;
+    width: 90%;
     background-color: #f3f1f1;
     outline: none;
+    color: var(--marrom-claro);
 }
 .second-btn{
     width: 150px;
@@ -189,25 +172,24 @@ form{
     font-size: 15px;
     background-color: var(--marrom-escuro);
     color: var(--corWhite);
-
     &:hover{
         color: var(--corBlack);
         background-color: var(--corWhite);
         transition: 0.7s;
     }
-} */
-
-
+} 
 
 /* Segunda parte do projeto */
-/* .content.second-content2{
-    display: flex;
+.second-content2{
     justify-content: space-around;
     align-items: center;
     height: 600px;
     width: 900px;
     display: none;
 }
+
+
+/*
 
 .first-colmn2{
     background-color: var(--marrom-escuro);
