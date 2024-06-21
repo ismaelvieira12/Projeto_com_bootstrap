@@ -68,7 +68,7 @@
     color: var(--bege);
 }
 
-.first-content1 .btn, .btn-cadastro {
+.first-content1 .btn {
     width: 150px;
     margin:  40px 0;
     padding: 10px;
@@ -175,7 +175,24 @@ form label input{
         transition: 0.7s;
     }
 } 
+.btn-cadastro{
+    background-color: transparent;
+    width: 150px;
+    margin:  40px 0;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--corWhite);
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--corWhite);
 
+    &:hover{
+        color: var(--corBlack);
+        transition: 0.7s;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+        background-color: var(--corWhite);
+    }
+}
 /* Segunda parte do projeto */
 
 .second-content2{
@@ -353,6 +370,9 @@ form label input{
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    animation: mover 1s;
+
+    z-index: 12;
 }
 .sin-up-js .content::before{
     left: 0%;
@@ -360,8 +380,11 @@ form label input{
     border-bottom-left-radius: 15px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
- }
+}
 
+.sin-in-js .second-content2 .first-colmn2{
+    z-index: 13;
+}
 @keyframes mover{
     from{
         left: 0;
@@ -369,17 +392,22 @@ form label input{
     }
     
     25% {
-        left: 15%;
+        left: 5%;
         width: 50%;
     }
 
-    50%{
+    35%{
         left: 25%;
         width: 60%;
     }
 
+    50%{
+        left: 35%;
+        width: 50%;
+    }
+
     75%{
-        left: 40%;
+        left: 55%;
         width: 50%;
     }
 
