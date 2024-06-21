@@ -1,17 +1,19 @@
 const btnLogin = document.querySelector('#login');
-const content = document.querySelector('.container');
+const cadastroBtn = document.querySelector('#sinUp');
+const body = document.querySelector('body');
 const firstContentOne = document.querySelector('.first-content1');
 const secondContentTruw = document.querySelector('.second-content2');
-const cadastroBtn = document.querySelector('.btn-cadastro');
 
 btnLogin.addEventListener('click', () => {
-    firstContentOne.style.display='none';
     secondContentTruw.style.display='inline-flex';
-    firstContentOne.classList.add('movimento');
+    secondContentTruw.style.opacity='1'
+    secondContentTruw.style.zIndex='15';
+    firstContentOne.style.display='none';
+    body.className ="sin-in-js"
 });
 
 cadastroBtn.addEventListener('click', () => {
     firstContentOne.style.display='inline-flex';
     secondContentTruw.style.display='none';
-    
+    body.className= "sin-up-js"
 })
