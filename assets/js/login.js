@@ -8,7 +8,6 @@ btnLogin.addEventListener('click', () => {
     secondContentTruw.style.display='inline-flex';
     secondContentTruw.style.opacity='1'
     secondContentTruw.style.zIndex='15';
-    firstContentOne.style.display='none';
     body.className ="sin-in-js"
 });
 
