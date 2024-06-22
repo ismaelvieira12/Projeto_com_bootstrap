@@ -198,7 +198,6 @@ form label input{
 .second-content2{
     display: flex;
     position: absolute;
-    z-index: -1;
     opacity: 0;
 }
 .first-colmn2{
@@ -211,166 +210,13 @@ form label input{
     order: 1;
 }
 
-
-
-/*
-
-.first-colmn2{
-    background-color: var(--marrom-escuro);
-    height: 100%;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    color: var(--bege);
-}
-.first-colmn2 .title{
-    font-family: "Playwrite PL", cursive;
-    font-weight: 100;
-    font-size: 40px;
-    margin: 0 0 5px 0;
-    color: var(--bege);
-}
-.first-colmn2 .btn-cadastro{
-    width: 150px;
-    margin:  40px 0;
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid var(--corWhite);
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    font-size: 15px;
-    background-color: var(--marrom-escuro);
-    color: var(--corWhite);
-
-    &:hover{
-        color: var(--corBlack);
-        background-color: var(--corWhite);
-        transition: 0.7s;
-    }
-}
-
-.second-column2{
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    background-color: var(--corWhite);
-    height: 100%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.second-column2 .title{
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-}
-.second-column2 .social-midia ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 20px 0;
-    gap: 10px;
-}
-.second-column2 .social-midia ul li{
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-    border-radius: 50%;
-    background-color: var(--bege);
-    width: 40px;
-    height: 40px;
-}
-.second-column2 .social-midia ul li a{
-    color: var(--corBlack);
-    font-size: 20px;
-    margin: 0 10px;
-    padding: 10px;
-    border-radius: 50%;
-}
-.second-column2 .descition{
-    font-size: 15px;
-    padding: 10px;
-}
-
-
-.second-column2 .formulario2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.forgot a{
-    font-size: 18px;
-    opacity: 0.7;
-    color: var(--marrom-claro);
-}
-.formulario2 label {
-    border: 1px solid #00000049;
-    width: 100%;
-    margin: 5px;
-    border-radius: 4px;
-    background-color: #f3f1f1;
-}
-
-.formulario2 label i{
-    margin-left: 5px;
-}
-.formulario2 label > input{
-    border: none;
-    margin: 5px;
-    padding: 10px;
-    background-color: #f3f1f1;
-    outline: none;
-}
-.formulario2 .btn{
-    width: 150px;
-    margin:  10px 0;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    font-size: 15px;
-    background-color: var(--marrom-escuro);
-    color: var(--corWhite);
-
-    &:hover{
-        color: var(--corBlack);
-        background-color: var(--corWhite);
-        transition: 0.7s;
-    }
-}
-
-*/
-
-/* Aninmações */
-/* .sin-in-js .first-content1 .first-colmn1, 
-.sin-in-js .first-content1 .second-column1{
-
-}
-
-.sin-in-js .second-content2 .first-colmn2, 
-.sin-in-js .second-content2 .second-column2{
-    z-index: 12;
-} */
-
 .sin-in-js .content::before{
     left: 60%;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    animation: ispinIn 1s linear;
+    animation: ispinIn 0.1s linear;
 
     z-index: 12;
 }
@@ -380,7 +226,7 @@ form label input{
     border-bottom-left-radius: 15px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    animation: spinUp 1s linear;
+    animation: spinUp 0.1s linear;
 
     z-index: 12;
 }
@@ -392,10 +238,37 @@ form label input{
 .sin-up-js .first-content1 .first-colmn1{
     z-index: 13;
 }
+
+.sin-in-js .first-content1 .second-column1{
+    position: relative;
+    animation: deslocamento 3s;
+    z-index: -1;
+}
+
+/*Deslocamento lateral */
+@keyframes deslocamento {
+    from{
+        left: 0;
+        opacity: 1;
+    }
+    25%{
+        left: -80%;
+        opacity: .5;
+    }
+    50%{
+        left: -100%;
+        opacity: .2;
+    }
+    to{
+        left: -110%;
+        opacity: 0;
+    }
+}
+
 @keyframes ispinIn{
     from{
         left: 0%;
-        width: 40%;
+        width: 50%;
     }
     
     25% {
@@ -428,7 +301,7 @@ form label input{
 @keyframes spinUp{
     from{
         left: 60%;
-        width: 40%;
+        width: 50%;
     }
     
     25% {
