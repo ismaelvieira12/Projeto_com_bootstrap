@@ -370,7 +370,7 @@ form label input{
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    animation: mover 1s;
+    animation: ispinIn 1s;
 
     z-index: 12;
 }
@@ -380,14 +380,15 @@ form label input{
     border-bottom-left-radius: 15px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    animation: spinUp 1s;
 }
 
 .sin-in-js .second-content2 .first-colmn2{
     z-index: 13;
 }
-@keyframes mover{
+@keyframes ispinIn{
     from{
-        left: 0;
+        left: 0%;
         width: 40%;
     }
     
@@ -413,6 +414,39 @@ form label input{
 
     to{
         left: 60%;
+        width: 40%;
+    }
+} 
+
+
+@keyframes spinUp{
+    from{
+        left: 60%;
+        width: 40%;
+    }
+    
+    25% {
+        left: 55%;
+        width: 50%;
+    }
+
+    35%{
+        left: 35%;
+        width: 60%;
+    }
+
+    50%{
+        left: 15%;
+        width: 50%;
+    }
+
+    75%{
+        left: 5%;
+        width: 50%;
+    }
+
+    to{
+        left: 0%;
         width: 40%;
     }
 } 
