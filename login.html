@@ -26,7 +26,7 @@
                 <div >
                     <ul class="social-midia">
                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
@@ -42,9 +42,15 @@
                         <i class="fa-regular fa-envelope"></i>
                         <input type="E-mail" name="E-mail" id="email" placeholder="Email">
                     </label>
+
                     <label for="password">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" name="password" id="password" placeholder="Password">
+                        <input type="password" name="password" class="password" placeholder="Password">
+                        <div class="eye-container">
+                            <i class="fa-solid fa-eye-slash eye"></i>
+                            <input type="checkbox" name="eye" class="eye-password">
+                            <!-- <i class="fa-regular fa-eye "></i> -->
+                        </div>
                     </label>
                     <button class="second-btn">Criar conta</button>
                 </form>
@@ -65,8 +71,8 @@
                 <h2 class="title">Fazer Login</h2>
                 <div >
                     <ul class="social-midia">
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
@@ -79,7 +85,12 @@
                     </label>
                     <label for="password">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" name="password" id="password" placeholder="Password">
+                        <input type="password" name="password" class="password" id="Password2" placeholder="Password">
+                        <div class="eye-container">
+                            <i class="eye fa-solid fa-eye-slash" id="eye"></i>
+                            <input type="checkbox" name="eye" class="eye-password2" id="eye-password2">
+                            <!-- <i class="fa-regular fa-eye "></i> -->
+                        </div>
                     </label>
                     <p class="forgot"><a href="#">Esqueceu sua senha?</a></p>
                     <button class="btn">Entrar</button>
