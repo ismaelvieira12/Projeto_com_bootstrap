@@ -64,7 +64,7 @@
     color: var(--bege);
 }
 .descrition{
-    font-size: 16px;
+    font-size: 18px;
     color: var(--bege);
 }
 
@@ -210,6 +210,7 @@ form label input{
         background-color: var(--corWhite);
     }
 }
+
 /* Segunda parte do projeto */
 
 .second-content2{
@@ -226,6 +227,10 @@ form label input{
 .second-column2{
     order: 1;
     
+}
+.forgot a{
+    color: #816D4F;
+    font-size: 20px;
 }
 
 .sin-in-js .content::before{
@@ -377,6 +382,12 @@ form label input{
         animation: ispinIn 1s;
     }
 
+    .sin-up-js .content::before{
+        top: 0;
+        border-radius: 0;
+        left: 0;
+        animation: ispinUp 0.5s;
+    }
     @keyframes ispinIn{
         from{
             top: 0%;
@@ -408,4 +419,36 @@ form label input{
             height: 40%;
         }
     } 
+
+    @keyframes ispinUp{
+        from{
+            top: 60%;
+            height: 110%;
+        }
+        
+        25% {
+            top: 50%;
+            height: 90%;
+        }
+    
+        35%{
+            top: 40%;
+            height: 70%;
+        }
+    
+        50%{
+            top: 30%;
+            height: 60%;
+        }
+    
+        75%{
+            top: 20%;
+            height: 50%;
+        }
+    
+        to{
+            top: 0%;
+            height: 40%;
+        }
+    }
 }
