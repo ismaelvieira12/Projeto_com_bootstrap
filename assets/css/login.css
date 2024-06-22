@@ -68,22 +68,22 @@
     color: var(--bege);
 }
 
-.first-content1 .btn {
+.first-content1 .btnLogin {
     width: 150px;
     margin:  40px 0;
     padding: 10px;
     border-radius: 20px;
     border: 1px solid var(--corWhite);
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     font-size: 15px;
-    background-color: var(--marrom-escuro);
+    background-color: transparent;
     color: var(--corWhite);
 
     &:hover{
         color: var(--corBlack);
         background-color: var(--corWhite);
         transition: 0.7s;
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
     }
 }
 .second-column1, .second-column2{ 
@@ -370,7 +370,7 @@ form label input{
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    animation: ispinIn 1s;
+    animation: ispinIn 1s linear;
 
     z-index: 12;
 }
@@ -380,10 +380,16 @@ form label input{
     border-bottom-left-radius: 15px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    animation: spinUp 1s;
+    animation: spinUp 1s linear;
+
+    z-index: 12;
 }
 
 .sin-in-js .second-content2 .first-colmn2{
+    z-index: 13;
+}
+
+.sin-up-js .first-content1 .first-colmn1{
     z-index: 13;
 }
 @keyframes ispinIn{
@@ -436,12 +442,12 @@ form label input{
     }
 
     50%{
-        left: 15%;
+        left: 20%;
         width: 50%;
     }
 
     75%{
-        left: 5%;
+        left: -5%;
         width: 50%;
     }
 
