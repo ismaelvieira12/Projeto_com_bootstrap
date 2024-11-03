@@ -11,8 +11,13 @@
 ### Modo dark
 ![image](https://github.com/user-attachments/assets/dcc0e57a-c2ff-4441-9fb4-37bfaffa12a0)
 
-## Para dispositivos moveis
-![image](https://github.com/user-attachments/assets/6a0ed9a6-0649-4e0d-8b4d-68958b9418eb)
+## Para dispositivos moveis..
+### Mobile
+![image](https://github.com/user-attachments/assets/be8026f3-2acd-43f2-a16d-fb2c81998ea3)
+![image](https://github.com/user-attachments/assets/1872b5f0-6d2d-405c-bd6f-0ac34918cb02)
+![image](https://github.com/user-attachments/assets/9ca102af-fb91-431c-b568-79b851d1cbcb)
 
-![image](https://github.com/user-attachments/assets/e7ad4b27-87ab-4e91-a8bb-5bca52d65c6a)
+### Tablets
+
+
 
