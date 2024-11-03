@@ -18,6 +18,9 @@
 ![image](https://github.com/user-attachments/assets/9ca102af-fb91-431c-b568-79b851d1cbcb)
 
 ### Tablets
+![image](https://github.com/user-attachments/assets/8a6fab0a-4513-4c53-b519-9320197ce3f6)
+![image](https://github.com/user-attachments/assets/e14706c2-c5be-4fb3-bd66-348e5d6ebe1c)
+
 
 
 
